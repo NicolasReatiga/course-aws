@@ -1,7 +1,7 @@
 function register(){
-    alert("Register page button")
+    window.location = "/register_page";
 }
 
 function consult(){
-    alert("Consult page button")
+    alert("Consult page button");
 }
