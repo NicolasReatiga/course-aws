@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from database.db import *
 
 app = Flask(__name__)
 
@@ -9,6 +10,10 @@ def home():
 @app.route("/register_page")
 def register_page():
     return render_template("register.html")
+    
+@app.route("/consult_page")
+def consult_page():
+    return render_template("consult.html")
 
 @app.route("/register_user", methods=["post"])
 def register_user():

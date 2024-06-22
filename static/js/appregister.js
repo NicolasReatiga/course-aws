@@ -1,3 +1,3 @@
 function registerUser(){
-    alert("Create user button")
+    alert("Usuario creado correctamente")
 }
