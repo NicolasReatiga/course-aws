@@ -23,7 +23,7 @@ def connectionSQL():
         return None
         
 def add_user(id, name, lastname, birthday):
-    query_sql  = "INSERT INTO " + db_table + " (id, name, lastname, birthday) VALUES (" + id + ", '" + name + "', '" + lastname + "', '" + birthday + "')"
+    query_sql  = "INSERT INTO " + db_table + " (id, name, lastname, birthday) VALUES ("+id+ ", '"+name+ "', '"+lastname+"', '"+birthday+"')"
     #Obtener return de la función
     connection_sql = connectionSQL()
     print(connection_sql)
