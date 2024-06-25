@@ -19,3 +19,9 @@ def func_register_user():
     save_user = add_user(id, name, lastname, birthday)
     
     return render_template("register.html")
+
+def func_consult_user():
+    obj_user = request.get_json()
+    id = obj_user["id"]
+    consult_user(id)
+    return "OK"
