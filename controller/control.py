@@ -23,5 +23,15 @@ def func_register_user():
 def func_consult_user():
     obj_user = request.get_json()
     id = obj_user["id"]
-    consult_user(id)
-    return "OK"
+    user_data = consult_user(id)
+    response = ""
+    if user_data != False and len(user_data) != 0:
+        response = {
+            'status': 'OK',
+            'name': user_data[0][1]
+        }
+    else:
+        response = {
+            'status': 'error'
+        }
+    return response

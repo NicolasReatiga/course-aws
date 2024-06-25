@@ -51,6 +51,7 @@ def consult_user(id):
             user_data = cursor.fetchall()
             connection_sql.close()
             
+            return user_data
         else:
             print("Error to connecting to database")
     except Exception as err:
