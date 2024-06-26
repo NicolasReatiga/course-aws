@@ -1,0 +1,24 @@
+body{
+    background-color: #91B7D9;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+div{
+    text-align: center;
+}
+
+textarea{
+    text-align: center;
+    margin:2%;
+}
+
+button{
+    font-size: 24px;
+    border-radius: 14px;
+    padding: 5px;
+    margin: 3%;
+}
